@@ -2,7 +2,6 @@
 
 Welcome to my Manual Testing Portfolio.  
 This repository contains my manual testing projects, including test cases, reports, and defect details.  
-All files are available as **view-only** on Google Drive to maintain data integrity.
 
 ---
 
