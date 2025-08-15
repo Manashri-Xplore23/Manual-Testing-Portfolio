@@ -1,1 +1,22 @@
+# Project 1 — Websites.co.in Registration & Dashboard Flow
+
+**Type:** Functional, UI, Negative Testing
+
+## Files
+-Test Cases(Excel:  https://docs.google.com/spreadsheets/d/1gorOJmz4Nv8o6sPVPzwn8-mx3_53j9iC/edit?usp=drive_link&ouid=103071898323743223327&rtpof=true&sd=true
+-Test Case Report(DOC): https://docs.google.com/document/d/1jcigmg56MPa3JrUtV-ksXjgLWS75hkf4/edit?usp=drive_link&ouid=103071898323743223327&rtpof=true&sd=true
+
+## Summary
+This project involved testing the registration, login, and dashboard navigation flow of the Websites.co.in platform.  
+It includes:
+- Positive and negative test cases
+- UI/UX observations
+- Field validations
+- Defect reporting with severity and status
+
+## Tools
+- Manual Testing
+- Excel
+- Word/PDF
+- Google Chrome, Edge, Firefox
 
