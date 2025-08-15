@@ -24,5 +24,5 @@ All files are available as **view-only** on Google Drive to maintain data integr
 
 ## Contact
 **Manashri Vaishampayan**  
-📩 Email: your-email@example.com  
-🔗 LinkedIn: Manashri Vaishampayan(www.linkedin.com/in/manashri-vaishampayan-150723u)
+ Email: your-email@example.com  
+ LinkedIn: Manashri Vaishampayan(www.linkedin.com/in/manashri-vaishampayan-150723u)
