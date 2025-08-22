@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manashri Vaishampayan - QA Portfolio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: Arial, sans-serif;
+      color: #222;
+      background-color: #f8f9fa;
+      line-height: 1.6;
+    }
+    a { text-decoration: none; color: inherit; }
+
+    /* Header */
+    header {
+      position: sticky;
+      top: 0;
+      background: rgba(255,255,255,0.95);
+      border-bottom: 1px solid #ddd;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 10;
+    }
+    nav a { margin: 0 10px; font-weight: bold; color: #444; }
+    nav a:hover { color: #0077ff; }
+
+    /* Profile Icon */
+    .profile-pic {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #0077ff;
+      margin-right: 10px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+    }
+
+    /* Sections */
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+    section h2 { font-size: 28px; margin-bottom: 15px; color: #333; }
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(120deg, #e0f7ff, #fff);
+      justify-content: space-between;
+    }
+    .hero-text { flex: 1; }
+    .hero-text h1 { font-size: 40px; margin-bottom: 20px; color: #222; }
+    .hero-text p { font-size: 18px; margin-bottom: 20px; }
+    .hero-text button {
+      padding: 10px 20px;
+      background: #0077ff;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .hero-text button:hover { background: #005fcc; }
+    .hero-img {
+      flex: 1;
+      max-width: 400px; /* 👈 fixed stable size */
+      border-radius: 10px;
+    }
+
+    /* Skills Section */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
+      width: 100%;
+    }
+    .skill-card {
+      background: #fff;
+      padding: 15px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+    .skill-card:hover { transform: translateY(-5px); }
+    .skill-icon {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    /* Cards */
+    .card {
+      background: white;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+      margin-bottom: 20px;
+      flex: 1;
+      min-width: 280px;
+    }
+
+    /* Project images */
+    .project-img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      transition: transform 0.3s ease;
+      max-height: 220px; /* 👈 fixed stable */
+      object-fit: cover;
+    }
+    .project-img:hover { transform: scale(1.03); }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #666;
+      border-top: 1px solid #ddd;
+      background: rgba(255,255,255,0.9);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="brand">
+      <img src="" alt="Profile" class="profile-pic">
+      Manashri • QA Portfolio
+    </div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Hi, I'm Manashri</h1>
+      <p>B.Sc (IT) graduate passionate about software testing — manual & automation. Skilled in STLC, defect lifecycle, and test case design.</p>
+      <button onclick="window.location='#contact'">Get in Touch</button>
+    </div>
+    <img src="images/Profile_Pic.jpg" alt="Profile Hero" class="hero-img">
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div style="flex:1">
+      <h2>About Me</h2>
+      <p>I am a dedicated QA tester with a strong foundation in manual testing and a growing interest in automation using Selenium WebDriver with Java. I have a keen eye for detail and enjoy ensuring software quality through meticulous testing.</p>
+    </div>
+    <img src="images/Profile_Pic.jpg" alt="Profile" class="hero-img">
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <div style="flex:1; width:100%">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon">📝</div>
+          Manual Testing
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🔄</div>
+          STLC / SDLC / DLC
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">✅</div>
+          Test Case Design
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🔍</div>
+          Functional / Regression
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">💾</div>
+          SQL
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">☕</div>
+          Java OOPs
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">⚡</div>
+          Selenium WebDriver
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">👥</div>
+          Agile Scrum
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education">
+    <div class="card">
+      <strong>B.Sc. (Information Technology) — 2025</strong>
+      <p>Anandibai Pradhan Science College, Mumbai University — CGPA: 9.77</p>
+    </div>
+    <div class="card">
+      <strong>HSC — 2022</strong>
+      <p>K.E.S.S.P. Jain Junior College — 67.33%</p>
+    </div>
+    <div class="card">
+      <strong>SSC — 2020</strong>
+      <p>K.E.S. G.R. Agrawal Vidyamandir, Nagothane — 86.80%</p>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <div class="card">
+      <img src="images/Website_co_in1.png" alt="Websites.co.in" class="project-img">
+      <strong>Websites.co.in — Registration & Dashboard Flow</strong>
+      <p>Manual testing of sign-up, login, field validations, and dashboard navigation. Includes defects and execution summary.</p>
+      <p><a href="YOUR_GOOGLE_DRIVE_LINK" target="_blank">📄 View Test Cases + Report</a></p>
+    </div>
+    <div class="card">
+      <img src="images/Pram_edu.png" alt="PRAM Edu" class="project-img">
+      <strong>PRAM Edu — Application Testing</strong>
+      <p>Performed functional and UI testing on PRAM Edu application. Designed test cases, identified defects, and validated workflows.</p>
+      <p><a href="YOUR_GOOGLE_DRIVE_LINK" target="_blank">📄 View Test Cases + Report</a></p>
+    </div>
+    <div class="card">
+      <img src="images/Educase.webp" alt="Educase" class="project-img">
+      <strong>Educase — Application Testing</strong>
+      <p>Tested Educase platform including login, navigation, and data validation. Covered both positive and negative scenarios.</p>
+      <p><a href="YOUR_GOOGLE_DRIVE_LINK" target="_blank">📄 View Test Cases + Report</a></p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div style="flex:1">
+      <h2>Contact</h2>
+      <p>📧 Email: <a href="mailto:manashrivaishampayan@gmail.com">manashrivaishampayan@gmail.com</a></p>
+      <p>📱 Phone: <a href="tel:+917020135405">+91 7020135405</a></p>
+      <p>📍 Location: Panvel, Maharashtra, India</p>
+      <p>Languages: English, Hindi, Marathi</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Manashri Vaishampayan. All rights reserved.
+  </footer>
+
+</body>
+</html>
